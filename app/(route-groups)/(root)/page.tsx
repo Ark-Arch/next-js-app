@@ -7,7 +7,7 @@ async function Home() {
     const albums = await response.json();
 
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-5 md:grid-cols'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols'>
             {albums.map((album: {id:number, title: string}) => (
                 <div
                     key={album.id}
